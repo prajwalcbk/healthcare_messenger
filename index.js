@@ -15,7 +15,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://sxl9752.uta.cloud/",
+    origin: "*",
     credentials: true,
   },
 });
